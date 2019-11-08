@@ -137,7 +137,9 @@ class ViewController: UIViewController {
 	
 	@objc
 	func tapThirdView() {
-		navigationController?.pushViewController(ThirdViewController(), animated: true)
+		let thirdVC = ThirdViewController()
+		thirdVC.modalPresentationStyle = .fullScreen
+		navigationController?.pushViewController(thirdVC, animated: true)
 	}
 }
 
