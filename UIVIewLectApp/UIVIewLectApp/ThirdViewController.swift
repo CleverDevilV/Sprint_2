@@ -79,6 +79,6 @@ class ThirdViewController: UIViewController {
 //	MARK: - Exit func
 	@objc
 	func exit() {
-		navigationController?.popViewController(animated: true)
+		dismiss(animated: true, completion: nil)
 	}
 }

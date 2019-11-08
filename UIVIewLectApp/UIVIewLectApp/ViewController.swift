@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 	//MARK: - button
 	let button: UIButton = {
 		let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-		button.backgroundColor = UIColor.gray
+		button.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
 		button.setTitle("Change color", for: .normal)
 		button.layer.cornerRadius = 20
 		button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
@@ -139,7 +139,8 @@ class ViewController: UIViewController {
 	func tapThirdView() {
 		let thirdVC = ThirdViewController()
 		thirdVC.modalPresentationStyle = .fullScreen
-		navigationController?.pushViewController(thirdVC, animated: true)
+//		navigationController?.pushViewController(thirdVC, animated: true)
+		present(thirdVC, animated: true, completion: nil)
 	}
 }
 
