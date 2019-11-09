@@ -27,12 +27,6 @@ class ThirdViewController: UIViewController {
 		view.addSubview(circleGradientView)
 	}
 	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		
-		self.navigationController?.setNavigationBarHidden(false, animated: true)
-	}
-	
 	override func viewWillLayoutSubviews() {
 		circleGradientView.center = view.center
 		circleGradientView.colorsArray = getColorOfView(x: circleGradientView.center.x, y: circleGradientView.center.y)
